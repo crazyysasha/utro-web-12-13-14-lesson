@@ -94,6 +94,7 @@
 .items-center {
     align-items: center;
 }
+
 .gap-30px {
     gap: 30px;
 }
@@ -104,4 +105,82 @@
 
 .flex-grow-1 {
     flex-grow: 1;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+}
+
+.btn-sky {
+    background-color: rgb(45, 156, 219, 15%);
+
+}
+
+
+.btn-purple {
+    background-color: rgb(93, 108, 146, 15%);
+}
+
+.btn-red {
+    background-color: rgb(255, 91, 91, 15%);
+}
+
+.btn-sky .btn-badge {
+    background-color: rgba(45, 156, 219, 1);
+}
+
+/* 
+.btn-badge {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    aspect-ratio: 1/1;
+    min-height: 22px;
+    border-radius: 9999px;
+    border: 3px solid #F3F2F7;
+} */
+
+.btn-sky:before {
+    background-color: rgba(45, 156, 219, 1);
+}
+
+.btn-purple:before {
+    background-color: rgba(94, 108, 147, 1);
+}
+
+.btn-red:before {
+    background-color: rgba(255, 91, 91, 1);
+}
+
+.btn::before {
+    content: attr(data-badge);
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    aspect-ratio: 1/1;
+    min-height: 19px;
+    border-radius: 9999px;
+    margin: 0;
+    border: 3px solid #F3F2F7;
 }
